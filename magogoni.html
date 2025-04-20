@@ -9,7 +9,9 @@
         <h1 style= "text-align: center; color: darkblue;">Magogoni Clinic (Huruma)</h1>
         <h2 style= "text-align: center; color: darkblue;"> POBOX 1996, Email:magogoniclinic@gmail.com</h2>
         <h3 style= "text-align: center; color: darkblue;">MEDICAL EXAMINATION FORM</h3>
-        <P style="text-align: center; color: red;">PART 1: To be filled by person being examined</P>
+        <fieldset> 
+            <legend>
+        <P style="text-align: center; color: red;">PART 1: To be filled by person being examined</P></legend>
     <h1 style="font-size: 17px;"> PERSONAL PARTICULAR</h1>
     <form>
         <label for="fullname"> Full Name:</label><br>
@@ -26,8 +28,10 @@
         <input type="radio" id="divorced" name="status" value="DIVORCED">
         <label for="DIVORCED">DIVORCED</label><br>
     </form>
-
-        <P style="text-align: center; color: red;">PART 2: family history</P>
+</fieldset>
+<fieldset>
+<legend>
+        <P style="text-align: center; color: red;">PART 2: family history</P></legend>
         <p>Your Father is Dead or Alive?</p>
     <form>
         <input type="radio" id="father1" name="parents" value="DEAD">
@@ -41,8 +45,10 @@
     <label for="DEAD">DEAD</label><br>
     <input type="radio" id="mother2" name="parentsB" value="ALIVE">
     <label for="ALIVE">ALIVE</label><br>
-</form>
-<p style="text-align: center; color: red;"> PART 3: Personal Medical History</p>
+</form>\
+</fieldset>
+<fieldset><legend>
+<p style="text-align: center; color: red;"> PART 3: Personal Medical History</p> </legend>
 <p style="text-align: center;">Have You been suffered from any of the following condition?</p>
 <p style="text-align: center; font-style: italic;">Answer Yes or No</p>
 <ol>
@@ -138,7 +144,9 @@
         <label for="no">no</label><br>
     </form>
 </ol>
-<p style="text-align: center; color: red;"> PART 4: To be filled by occupational helth doctor</p>
+</fieldset>
+<fieldset><legend>
+<p style="text-align: center; color: red;"> PART 4: To be filled by occupational helth doctor</p></legend>
 <p>PHYSICAL IDENTIFICATION MARK:</p>
 <p>PHYSICAL</p>
 <form>
@@ -247,6 +255,7 @@
    <label for="fullname"> if any abnormality you found and remark:</label><br>
         <input type="text" id="other" name="other"><br>
 </form>
+</fieldset>
 
 
     </body>
